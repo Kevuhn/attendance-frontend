@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 
-export default function LoginPage() {
+export default function userLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");

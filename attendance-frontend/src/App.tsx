@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import LoginPage from "./routes/LoginPage";
-import AdminDashboardPage from "./routes/AdminDashboardPage";
+import UserLogin from "./routes/userLogin";
+import AdminDashboard from "./routes/adminDashboard";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/" element={<AdminDashboardPage />} />
+        <Route path="/login" element={<UserLogin />} />
+        <Route path="/" element={<AdminDashboard />} />
 
         {/* unmatched URLs fall back to the dashboard */}
         <Route path="*" element={<Navigate to="/" replace />} />
